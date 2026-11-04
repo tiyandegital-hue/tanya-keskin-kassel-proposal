@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bot-Demo — Hair & Dreams Kassel (Konzept)</title>
+<meta name="description" content="Erleben Sie den WhatsApp-Buchungsassistenten für Hair & Dreams live: vier realistische Szenarien — Termin buchen, umbuchen, Preisfrage, Erinnerung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="concept-bar"><strong>KONZEPT</strong> · Entwurf von Tiyan Digital für <span data-biz="name">Hair & Dreams</span> — noch kein Live-Produkt</div>
+
+<header class="site-header">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Hair & Dreams Bot-Konzept – Startseite">
+      <span class="brand-mark"><span data-biz="name">Hair & Dreams</span> <em>· Bot</em></span>
+      <span class="brand-sub">Konzept</span>
+    </a>
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="bot-demo.html">Bot-Demo</a>
+      <a href="so-funktioniert-es.html">So funktioniert's</a>
+      <a href="preise.html">Preise</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="bot-demo.html" class="nav-cta">Bot testen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="block" style="padding-bottom:2rem">
+    <div class="wrap">
+      <p class="eyebrow reveal">Interaktive Demo</p>
+      <h1 class="reveal">Der Bot bei der Arbeit.</h1>
+      <p class="lead reveal">Vier Szenarien aus Ihrem Salon-Alltag — so antwortet der Assistent Ihren Kundinnen. Wählen Sie ein Szenario und schauen Sie zu.</p>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap grid-2" style="align-items:start">
+      <div class="reveal">
+        <div class="scenario-tabs" role="tablist" aria-label="Demo-Szenarien">
+          <button data-scenario="buchen" class="active" role="tab" aria-selected="true">Termin buchen</button>
+          <button data-scenario="umbuchen" role="tab" aria-selected="false">Umbuchen</button>
+          <button data-scenario="preis" role="tab" aria-selected="false">Preisfrage</button>
+          <button data-scenario="erinnerung" role="tab" aria-selected="false">Erinnerung</button>
+        </div>
+        <div class="player-controls">
+          <button class="btn btn-gold" id="chat-play" type="button">Szenario abspielen</button>
+          <button class="btn btn-ghost" id="chat-reset" type="button">Zurücksetzen</button>
+        </div>
+        <div class="scenario-note">
+          <strong>Hinweis zur Demo:</strong> <span data-biz="demoNote">Alle Namen, Zeiten und Preise in den Chat-Beispielen sind frei erfunden und dienen nur der Demonstration.</span> Im echten Einsatz nutzt der Assistent Ihre wirklichen Leistungen, Preise und Ihren Kalender.
+        </div>
+        <div style="margin-top:2rem">
+          <h3 style="font-size:1.25rem">Was der Bot hier zeigt</h3>
+          <ul class="hero-points">
+            <li><span class="tick">✓</span> Versteht freie Sprache — keine starren Befehle nötig</li>
+            <li><span class="tick">✓</span> Fragt nach, statt zu raten (Name, Wunschzeit)</li>
+            <li><span class="tick">✓</span> Bestätigt jede Buchung schriftlich — schwarz auf weiß</li>
+            <li><span class="tick">✓</span> Bleibt höflich, auch bei Storno und Umbuchung</li>
+          </ul>
+        </div>
+      </div>
+      <div class="phone-stage reveal" data-delay="120">
+        <div>
+          <div class="phone" role="img" aria-label="Interaktive WhatsApp-Demo des Buchungsassistenten">
+            <div class="phone-notch"></div>
+            <div class="wa-head">
+              <div class="wa-avatar">H</div>
+              <div>
+                <div class="wa-name"><span data-biz="name">Hair & Dreams</span></div>
+                <div class="wa-status online">online</div>
+              </div>
+            </div>
+            <div class="wa-body" id="chat-body" style="min-height:400px;max-height:440px"></div>
+            <div class="wa-input">
+              <div class="fake">Nachricht</div>
+              <button class="wa-send" tabindex="-1" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12l18-9-6 18-3.5-7.5L3 12z" fill="#0b141a"/></svg>
+              </button>
+            </div>
+          </div>
+          <p class="demo-hint">Reine Front-End-Demo — es werden keine echten Nachrichten gesendet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="background:var(--paper-deep)">
+    <div class="wrap" style="text-align:center">
+      <h2 class="reveal">Überzeugt?</h2>
+      <p class="lead reveal" style="margin:0 auto 2rem">So klingt Ihr Salon, wenn er rund um die Uhr erreichbar ist — in Ihrem Ton, mit Ihren Preisen.</p>
+      <div class="reveal" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-gold" href="so-funktioniert-es.html">So funktioniert's</a>
+        <a class="btn btn-ghost" href="preise.html">Beispielpreise ansehen</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand"><span data-biz="name">Hair & Dreams</span> <em>· Bot-Konzept</em></div>
+      <p style="color:rgba(250,247,241,.6);font-size:.9rem;max-width:36ch;margin-top:.8rem">Ein Konzept-Entwurf von Tiyan Digital: ein WhatsApp-Buchungsassistent für Ihren Salon in Kassel.</p>
+    </div>
+    <div>
+      <h4>Konzept</h4>
+      <a href="bot-demo.html">Bot-Demo</a>
+      <a href="so-funktioniert-es.html">So funktioniert's</a>
+      <a href="preise.html">Preise</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div>
+      <h4>Rechtliches (Demo)</h4>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span data-year></span> Tiyan Digital · Konzept-Entwurf — kein Live-Produkt</span>
+    <span>Alle Beispiel-Dialoge sind fiktiv.</span>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/chat.js"></script>
+</body>
+</html>
